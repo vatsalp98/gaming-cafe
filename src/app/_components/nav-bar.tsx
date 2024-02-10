@@ -7,8 +7,8 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
+  Link,
 } from "@nextui-org/react";
 import Image from "next/image";
 
@@ -16,11 +16,11 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "VIP Services",
-    "Price",
-    "Facilities",
-    "Location",
-    "Live Stream",
+    { title: "VIP Services", href: "/vip" },
+    { title: "Price", href: "/price" },
+    { title: "Facilites", href: "/facilites" },
+    { title: "Location", href: "/location" },
+    { title: "Live Streams", href: "/live" },
   ];
 
   return (
@@ -40,17 +40,21 @@ export default function NavBar() {
 
         <NavbarContent className="items-center pr-3 sm:hidden" justify="center">
           <NavbarBrand>
-            <Image src="/logo.png" alt="LOGO" width={200} height={75} />
+            <Link href="/">
+              <Image src="/logo.png" alt="LOGO" width={200} height={75} />
+            </Link>
           </NavbarBrand>
         </NavbarContent>
 
         <NavbarContent className="hidden gap-4 sm:flex" justify="center">
           <NavbarBrand>
-            <Image src="/logo.png" alt="LOGO" width={300} height={75} />
+            <Link href="/">
+              <Image src="/logo.png" alt="LOGO" width={300} height={75} />
+            </Link>
           </NavbarBrand>
 
           <NavbarItem className="ml-10">
-            <Link color="foreground" href="/services">
+            <Link color="foreground" href="/vip">
               VIP Services
             </Link>
           </NavbarItem>
@@ -93,8 +97,8 @@ export default function NavBar() {
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="w-full" href="#" size="lg">
-                {item}
+              <Link className="w-full" href={item.href} size="lg">
+                {item.title}
               </Link>
             </NavbarMenuItem>
           ))}

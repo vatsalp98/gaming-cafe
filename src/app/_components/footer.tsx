@@ -49,7 +49,6 @@ export default function SiteFooter() {
       </div>
       <div className="flex h-[75px] w-full flex-row items-center justify-between px-10">
         <div className="flex flex-row items-center gap-2 font-semibold text-gray-400">
-          <BookSquare />
           5Fifty Gaming | All rights reserved {new Date().getFullYear()}
         </div>
         {/* <ModeToggle /> */}

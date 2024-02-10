@@ -35,7 +35,7 @@ export default function HomePage() {
               </p>
             </div>
           </div> */}
-            <div className="flex w-full items-center justify-between pb-16 pt-32 lg:flex-col">
+            <div className="flex w-full flex-col items-center justify-between pb-16 pt-32">
               <div className="w-1/2 md:w-full">
                 <Image
                   src="/gaming_hero.svg"
@@ -47,11 +47,11 @@ export default function HomePage() {
                   sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
                 />
               </div>
-              <div className="flex w-1/2 flex-col items-center self-center pl-10 lg:w-full lg:text-center">
+              <div className="flex flex-col items-center self-center text-center lg:w-full">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
                   Unlock the Ultimate Gaming Experience!
                 </h1>
-                <p className="mt-6 text-lg leading-8 ">
+                <p className="mt-6 text-center text-lg leading-8">
                   Welcome to 5FiftyGame, where gaming meets community in an
                   unparalleled fusion of entertainment and camaraderie. Step
                   into a world of immersive gaming, cutting-edge technology, and
