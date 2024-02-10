@@ -2,6 +2,18 @@ import { Chip, Link, cn } from "@nextui-org/react";
 import SiteLayout from "../_components/default-layout";
 import { DirectUp, Gps } from "iconsax-react";
 
+export const metadata = {
+  title: "5FiftyGaming | Location",
+  description:
+    "Best gaming cafe in the heart of Vancouver Downtown. Open to reservations and game requests.",
+  icons: [
+    {
+      rel: "icon",
+      url: "https://i0.wp.com/5fiftygame.ca/wp-content/uploads/2022/08/cropped-5Fiftygame-logo-4.6-icon-2-small.png?fit=32%2C32&ssl=1",
+    },
+  ],
+};
+
 export default function LocationPage() {
   let walk_times = [
     "Waterfont station: 4mns",

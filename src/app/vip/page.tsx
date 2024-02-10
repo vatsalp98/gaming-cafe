@@ -2,6 +2,18 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import SiteLayout from "../_components/default-layout";
 import Image from "next/image";
 
+export const metadata = {
+  title: "5FiftyGaming | VIP Services",
+  description:
+    "Best gaming cafe in the heart of Vancouver Downtown. Open to reservations and game requests.",
+  icons: [
+    {
+      rel: "icon",
+      url: "https://i0.wp.com/5fiftygame.ca/wp-content/uploads/2022/08/cropped-5Fiftygame-logo-4.6-icon-2-small.png?fit=32%2C32&ssl=1",
+    },
+  ],
+};
+
 export default function VipPage() {
   return (
     <>
